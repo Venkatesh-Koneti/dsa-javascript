@@ -1,2 +1,2 @@
 # dsa-javascript
-Data Structures and Algorithms using JavaScript
+Data Structures and Algorithms using JavaScript.
