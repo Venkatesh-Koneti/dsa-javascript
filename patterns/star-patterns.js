@@ -1,5 +1,5 @@
 /*
-    1: Left-Aligned Triangle
+    Pattern 1: Left-Aligned Triangle
 
         *
         **
