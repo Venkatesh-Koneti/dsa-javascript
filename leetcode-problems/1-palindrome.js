@@ -23,7 +23,17 @@
 */
 
 const isPalindrome = function(x) {
-    return x === Number(x.toString().split("").reverse().join(""))
+    // return x === Number(x.toString().split("").reverse().join(""))
+    if (x < 0) return false;
+
+    let original = x, reversed = 0;
+    while (x !== 0) {
+        let reminder = x % 10
+        reversed = reversed * 10 + reminder;
+        x = Math.floor(x / 10);
+    }
+
+    return original === reversed;
 };
 
 const result = isPalindrome(121)
