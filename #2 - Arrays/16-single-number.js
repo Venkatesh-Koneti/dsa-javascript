@@ -16,3 +16,27 @@
         Input: nums = [1]
         Output: 1
 */
+
+var singleNumber = function(nums) {
+    // const hash = {};
+
+    // for (let num of nums) {
+    //     if (hash[num] === undefined) {
+    //         hash[num] = 1;
+    //     } else {
+    //         hash[num]++;
+    //     }
+    // }
+
+    // for (let num of nums) {
+    //     if (hash[num] === 1) {
+    //         return num;
+    //     }
+    // }
+
+    let result = 0;
+    for (let num of nums) {
+        result ^= num; 
+    }
+    return result;
+};
